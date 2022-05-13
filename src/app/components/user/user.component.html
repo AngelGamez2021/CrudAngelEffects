@@ -1,0 +1,76 @@
+<div class="container">
+
+    <div class="card card-title">
+        <p>
+            Carnet ID: Id Example
+        </p>
+        <img id="back" routerLink="/cardList" src="../../../assets/previous page.png">
+    </div>
+
+    <div class="cuadriculas">
+
+        <div class="cardUser cardUser-info">
+
+
+            <div class="imgName">
+                <img [src]=user?.avatar class="perfil" >
+                <label class="labelName">User Example</label>
+            </div>
+
+            <div class="PrimeraInfo">
+                <label id="name">Name</label>
+                <label id="firtsName">First Name</label>
+
+                <label id="infoName">Name Example</label>
+                <label id="infoFirtstName">{{user?.first_name}}</label>
+            </div>
+
+
+            <div class="segundaInfo">
+                <label id="lastName">Last Name</label>
+                <label id="number">Number</label>
+
+                <label id="infoLastName">{{user?.last_name}}</label>
+                <label id="infoNumber">301337315</label>
+            </div>
+
+
+            <div class="terceraInfo">
+                <label id="email">Email</label>
+                <label id="id">ID</label>
+
+                <label id="infoEmail">{{user?.email}}</label>
+                <label id="infoId">1140963852</label>
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="cardPrint cardPrint-print">
+
+            <div class="texts">
+
+                <h1 class="h1Print">Print Card</h1>
+                <p class="parrafoPrint">You cant print card <br> the user
+                </p>
+
+            </div>
+
+            <img src="../../../assets/descargar.png" class="download">
+
+        </div>
+
+
+    </div>
+
+    <div class="cardNoMessage cardNoMessage-message ">
+
+
+        <img class="imagenNoMessage" src="../../../assets/correo-electronico.png">
+
+        <p class="noMessage">No Messages</p>
+        <p class="whenyou">When you have messages you'll <br> see then here</p>
+    </div>
+
+</div>

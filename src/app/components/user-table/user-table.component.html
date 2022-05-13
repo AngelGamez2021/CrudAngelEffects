@@ -1,0 +1,50 @@
+<div class="table">
+    <table>
+        <thead>
+            <tr class="sticky">
+                <th>
+                    <input type="checkbox" class="check"/>
+                </th>
+                <th *ngFor="let data of titleData">
+                    <p class="titles">{{ data.text }}</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let user of gridData">
+
+                <td>
+                    <input type="checkbox" class="check"  />
+                </td>
+              
+                <td class="user">
+                <!-- <img id="imageProfile" src="../../../assets/perfil-del-usuario.png">  -->
+                <img id="imageProfile" [src]=user.avatar>
+                    <p class="info" id="profile">{{user.first_name}}</p>
+                </td>
+                <td>
+                    <p class="info">{{user.last_name}}</p>
+                </td>
+               
+                <td>
+
+                    <p class="info">{{user.email}}</p>
+                </td>
+             
+                <td>
+                    <img (click)="seeUser(user.id)"  class="image" src="../../../assets/vista.png">
+                </td>
+
+                <td>
+                    <img (click)="editUser(user.id)" class="image" src="../../../assets/lapiz.png">
+                </td>
+
+                <td>
+                    <img (click)="removeUser(user.id)" class="image" src="../../../assets/eliminiar.png">
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

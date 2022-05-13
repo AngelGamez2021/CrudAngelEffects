@@ -1,0 +1,95 @@
+.table {
+
+  padding-left: 43px;
+
+  height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+thead tr th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+}
+
+/* fondo del scroll */
+.table::-webkit-scrollbar {
+  width: 7px;
+  background: #E1E1E1;
+}
+
+/* barrita que se desliza */
+.table::-webkit-scrollbar-thumb {
+  background: #bdbcbc;
+}
+
+
+
+.table .check {
+  width: 20px;
+  height: 20px;
+  background: #E1E1E1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 23px !important;
+  margin-right: 31px !important;
+  margin-top: 30px !important;
+
+
+}
+
+.table .titles {
+  margin-bottom: 30px !important;
+  margin-right: 180px !important;
+  margin-top: 35px !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1D1E29;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px !important;
+  margin-top: 30px !important;
+
+}
+
+#imageProfile {
+  height: 71px;
+  width: 71px;
+
+  margin-right: 21px;
+  border-radius: 50%;
+}
+
+#profile {
+  margin: 0 !important;
+}
+
+
+
+
+.table .info {
+  margin-bottom: 30px !important;
+  margin-right: 90px !important;
+  margin-top: 30px !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #6B6B6B;
+
+}
+
+.table .image {
+  margin-bottom: 30px !important;
+  margin-right: 65px !important;
+  margin-top: 30px !important;
+  text-align: center;
+  cursor: pointer;
+}

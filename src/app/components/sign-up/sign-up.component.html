@@ -1,0 +1,101 @@
+<div class="container">
+
+    <!-- <span *ngIf="submitted && formSign.invalid" id="span">Todos los campos son obligatorios</span> -->
+
+
+    <form [formGroup]="formSign" (ngSubmit)="onSubmit()">
+
+        <div class="card">
+
+            <div class="titles">
+                <div class="title" routerLink="/login">Sign In</div>
+                <div class="titleLeft "> Sing up </div>
+            </div>
+
+
+            <div class="labelInput">
+
+                <div>
+                    <label class="labelMargin" for="userName">User name</label> <br>
+                    <input type="text" class="form-control" formControlName="userName" placeholder="Your user name">
+
+                    <div *ngIf="getError('userName')">
+                        <div class="error modal-error">
+                            {{ getError("userName") }}
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="labelMargin" for="firstName">First name</label><br>
+                    <input type="text" class="form-control" formControlName="first_name" placeholder="Your first name">
+                    <div *ngIf="getError('first_name')">
+                        <div class="error modal-error">
+                            {{ getError("first_name") }}
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="labelMargin" for="lastName">Last name</label><br>
+                    <input type="text" class="form-control" formControlName="last_name" placeholder="Your last name">
+                    <div *ngIf="getError('last_name')">
+                        <div class="error modal-error">
+                            {{ getError("last_name") }}
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="labelMargin" for="phoneNumer">Phone number</label><br>
+                    <input type="text" class="form-control" formControlName="phoneNumber" placeholder="Your number">
+                    <div *ngIf="getError('phoneNumber')">
+                        <div class="error modal-error">
+                            {{ getError("phoneNumber") }}
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="labelMargin" for="id">ID</label><br>
+                    <input type="text" class="form-control" formControlName="id" placeholder="Your ID">
+                    <div *ngIf="getError('id')">
+                        <div class="error modal-error">
+                            {{ getError("id") }}
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="labelMargin" for="emailAddress">Email</label><br>
+                    <input type="text" class="form-control" formControlName="email" placeholder="Your Email">
+                    <div *ngIf="getError('email')">
+                        <div class="error modal-error">
+                            {{ getError("email") }}
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div>
+                <label class="labelPass" for="password">Create your password</label><br>
+                <input class="inputPass" formControlName="password" type="password" placeholder="Your password">
+                <div *ngIf="getError('password')">
+                    <div class="error modal-error">
+                        {{ getError("password") }}
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <button [ngClass]="{'disable': formSign.invalid}" class="btn" [disabled]="formSign.invalid" type="submit "
+                value="login">Sign up</button>
+
+        </div>
+
+
+    </form>
+
+
+</div>

@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    /* background: linear-gradient(color1, color2); DEGRADADO... */
+    background-color: #f6f4f4;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.btn {
+    width: 100%;
+    background: #5C6DFF;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    height: 70px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.disable {
+    background: #8290ad !important;
+    color: #fafafa !important;
+    cursor: auto !important;
+}
+
+.error {
+    color: #d32f2f;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.modal-error {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+}

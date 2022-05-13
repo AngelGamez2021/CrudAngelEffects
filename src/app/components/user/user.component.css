@@ -1,0 +1,261 @@
+.container {
+    margin: none;
+    width: auto;
+    padding: 40px;
+
+}
+
+.card {
+    /* margin: 10px; */
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: left;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    
+
+}
+
+
+.card-title {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 20px 40px;
+    justify-content: space-between;
+    height: 45px !important;
+    align-items: center;
+
+}
+
+#back{
+    cursor:pointer
+}
+
+
+.cuadriculas {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    height: 870px;
+
+}
+
+.cardUser {
+    display: block;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.PrimeraInfo {
+    display: grid;
+    grid-template-columns: 0.8fr 0.4fr;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-right: 0 !important;
+    font-family: 'Inter', sans-serif;
+}
+
+#name {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#firtsName {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#infoName {
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+#infoFirtstName {
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+
+.segundaInfo {
+    display: grid;
+    grid-template-columns: 0.8fr 0.4fr;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-right: 0 !important;
+    font-family: 'Inter', sans-serif;
+}
+
+#lastName {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#number {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#infoLastName {
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+#infoNumber {
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+
+
+.terceraInfo {
+    display: grid;
+    grid-template-columns: 0.8fr 0.4fr;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-right: 0 !important;
+    font-family: 'Inter', sans-serif;
+}
+
+#email {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#id {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#infoEmail {
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+#infoId {
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+
+
+.cardUser-info {
+    padding: 90px;
+    width: 693px;
+}
+
+.imgName {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    align-items: center;
+
+}
+
+.cardPrint {
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.cardPrint-print {
+    padding: 55px;
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr;
+    align-items: center;
+}
+
+.h1Print {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+    padding-bottom: 28px;
+}
+
+.download {
+    text-align: right;
+    width: 100px;
+    height: 100px;
+    margin-left: 279px;
+    cursor: pointer;
+
+}
+
+
+
+.parrafoPrint {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+.cardNoMessage {
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    margin-bottom: 16px;
+}
+
+.cardNoMessage-message {
+    padding: 28px;
+    padding-bottom: 0 !important;
+    text-align: center;
+    height: 870px;
+}
+
+.imagenNoMessage {
+    margin-top: 189px;
+
+    width: 330px;
+    height: 289px;
+}
+
+.noMessage {
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.whenyou {
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #9E9E9E;
+
+}

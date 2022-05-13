@@ -1,0 +1,78 @@
+.container {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -69%);
+    float: left;
+    margin: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: left;
+    padding: 60px;
+}
+
+.titles {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr;
+
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-bottom: 68px;
+    margin-right: 42px;
+    font-weight: 700;
+    flex-direction: row;
+}
+
+.titleRight {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-bottom: 68px;
+    font-weight: 700;
+    color: #DBDBDB !important;
+    cursor:pointer;
+}
+
+label {
+    color: #6B6B6B;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    width: 88%;
+    background-color: #F1F1F1;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    border: none;
+    padding: 15px 24px;
+    font-family: 'Inter', sans-serif;
+    opacity: 85%;
+    font-weight: 400;
+    border-radius: 10px;
+    color: #6B6B6B;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+#span {
+    font-family: 'Inter', sans-serif;
+    color: red;
+}
+
+.margen input{
+
+    margin-bottom: 0%;
+}
