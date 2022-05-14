@@ -1,6 +1,6 @@
 import { Action, createReducer, on } from "@ngrx/store";
 import { User } from "src/app/interfaces/user.interface";
-import { readUser, readUserFailure, readUserSuccess } from "../actions";
+import * as UserActions from "../actions";
 
 
 
@@ -25,14 +25,14 @@ export const usuarioInitialState: UsuarioState = {
 
 const _usuarioReducer = createReducer(usuarioInitialState,
 
-    on(readUser, (state, { id }) => ({
+    on(UserActions.readUser, (state, { id }) => ({
         ...state,
         loading: true,
         id: id
     })),
 
 
-    on(readUserSuccess, (state, { user }) => ({
+    on(UserActions.readUserSuccess, (state, { user }) => ({
         ...state,
         loading: false,
         loaded: true,
@@ -40,7 +40,7 @@ const _usuarioReducer = createReducer(usuarioInitialState,
     })),
 
 
-    on(readUserFailure, (state, { payload }) => ({
+    on(UserActions.readUserFailure, (state, { payload }) => ({
         ...state,
         loading: false,
         loaded: false,
@@ -51,6 +51,15 @@ const _usuarioReducer = createReducer(usuarioInitialState,
         }
 
     }))
+
+// deleteUser
+
+
+// on(UserActions.deleteUser)
+
+
+
+
 
 )
 export function usuarioReducer(state: UsuarioState | undefined, action: Action) {

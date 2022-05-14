@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, concatMap, map, of, tap } from 'rxjs';
+import { User } from 'src/app/interfaces/user.interface';
 import { UserService } from '../../services/user.service';
 import * as UserActions from '../actions/usuario.actions';
 
@@ -21,8 +22,7 @@ constructor(
       ofType(UserActions.readUser),
       concatMap((action) => this.userService.getUserById(action.id)
       .pipe(
-          map(dataUser => UserActions.readUserSuccess({ user: dataUser })),
-          // POSIBLEMENTE EL ERRRO SEA POR LO QUE SE QUITO AHORITA PARA LOS ERRORES
+          map((dataUser) => UserActions.readUserSuccess({ user: dataUser })),
           catchError((error) => of(UserActions.readUserFailure({ payload:error })))
         )
       )

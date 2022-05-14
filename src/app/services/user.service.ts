@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { User } from '../interfaces/user.interface';
 
 @Injectable({
@@ -13,8 +14,6 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
 
-
-
   getUsers() {
     return this.http.get(`${this.url}/users?per_page=20&delay=3`)
       .pipe(
@@ -22,12 +21,19 @@ export class UserService {
       );
 
   }
-  
-  getUserById(id: string){
+
+  getUserById(id: string) {
     return this.http.get(`${this.url}/users/${id}`)
-    .pipe(
-      map((resp: any) =>['data'])
-    )
+      .pipe(
+        map((resp: any) => resp['data'])
+      )
+  }
+
+  deleteUserById(id: string) {
+    return this.http.delete(`${this.url}/users/${id}`)
+      .pipe(
+        map((resp: any) => resp['data'])
+      )
   }
 
 
@@ -46,7 +52,7 @@ export class UserService {
   }
 
 
-// este es un cambio para poder subir a git
+  // este es un cambio para poder subir a git
 
 
 }

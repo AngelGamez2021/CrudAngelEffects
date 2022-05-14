@@ -13,7 +13,7 @@
 
 
             <div class="imgName">
-                <img [src]=user?.avatar class="perfil" >
+                <img [src]=user?.avatar id="perfil" >
                 <label class="labelName">User Example</label>
             </div>
 
@@ -21,7 +21,7 @@
                 <label id="name">Name</label>
                 <label id="firtsName">First Name</label>
 
-                <label id="infoName">Name Example</label>
+                <label id="infoName">{{user?.first_name}}</label>
                 <label id="infoFirtstName">{{user?.first_name}}</label>
             </div>
 
